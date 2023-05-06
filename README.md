@@ -2,7 +2,7 @@
 
 This is a student management system built using **Django 4**, **HTML 5**, **CSS 3**, and **Bootstrap 5**.
 
-![plot](https://github.com/BobsProgrammingAcademy/Student-Management-System/blob/master/students/static/images/homepage.png?raw=true)
+![plot](https://github.com/hamza-m-farooqi/Django_StudentManagement/blob/main/students/static/images/DjangoStudentManagementSystem.PNG?raw=true)
 
 
 ## Table of Contents 
@@ -10,7 +10,7 @@ This is a student management system built using **Django 4**, **HTML 5**, **CSS 
 - [Installation](#installation)
 - [Run the application](#run-the-application)
 - [View the application](#view-the-application)
-- [Copyright and License](#copyright-and-license)
+- [License](#copyright-and-license)
 
 
 ## Prerequisites
@@ -89,6 +89,6 @@ python manage.py runserver
 Go to http://127.0.0.1:8000/ to view the application.
 
 
-## Copyright and License
+## License
 
-Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
+Code released under the MIT license.
