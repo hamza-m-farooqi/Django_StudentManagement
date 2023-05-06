@@ -1,0 +1,30 @@
+{% extends 'students/base.html' %}
+{% block body %}
+<h3 class="m-4">Edit Student</h3>
+{% if Success %}
+  <div class="alert alert-dismissible alert-success">
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <strong>Well done!</strong> Student Updated Successfully. Click here for <a href="{% url 'index' %}" class="alert-link"> Home Page</a>.
+  </div>
+{% else %}
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="card bg-light " >
+            <div class="card-header">
+                <i class="fa-solid fa-pen-to-square fa-md"> Student Record</i>
+            </div>
+            <div class="card-body">
+             <form action="" method="POST">
+                {% csrf_token %}
+                {{Form.as_p}}
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary mx-1">Update</button>
+                    <a href="{% url 'index' %}" class="btn btn-secondary mx-1">Cancel</a>
+                </div>
+             </form>
+            </div>
+          </div>
+    </div>
+</div>
+{% endif %}
+{% endblock  %}
